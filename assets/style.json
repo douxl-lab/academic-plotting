@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "width_in": 5.5,
+  "height_in": 3.4,
+  "dpi": 300,
+  "font": "DejaVu Serif",
+  "font_size": 9,
+  "palette": ["#0072B2", "#D55E00", "#009E73", "#CC79A7", "#000000"],
+  "markers": ["o", "s", "^", "D", "v"],
+  "linestyles": ["-", "--", "-.", ":"]
+}

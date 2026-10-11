@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Plotting"
+  short_description: "Reproducible scientific charts and evidence-bound diagrams"
+  default_prompt: "Use $academic-plotting to create my paper figure from the actual sources, preserve statistical meaning and provenance, and verify the delivered artifacts."

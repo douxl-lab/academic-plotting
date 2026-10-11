@@ -1,0 +1,23 @@
+{
+  "corpus_version": "1.0.0",
+  "notice": "Human-authored expectations for host/agent evaluation; not measured automatic selection accuracy.",
+  "cases": [
+    {"id":"P01","lang":"zh","prompt":"用我三次独立种子的真实实验CSV做论文消融柱状图，误差棒用样本标准差，输出SVG、PDF和PNG。","activate":true,"expected_route":"numeric","scientific_input":"provided"},
+    {"id":"P02","lang":"en","prompt":"Plot these original training logs in my manuscript style and keep the data, units and reproduction code.","activate":true,"expected_route":"numeric","scientific_input":"provided"},
+    {"id":"P03","lang":"zh","prompt":"把Iris原始观测做成箱线图和小提琴图，保留离群点，不要当作我的模型实验。","activate":true,"expected_route":"numeric","scientific_input":"public_dataset"},
+    {"id":"P04","lang":"en","prompt":"Create a scientific heatmap from this source matrix; retain every cell and produce editable vector text.","activate":true,"expected_route":"numeric","scientific_input":"provided"},
+    {"id":"P05","lang":"zh","prompt":"根据我的方法章节和代码给PaperBanana准备架构图Prompt，现在不要调用付费模型。","activate":true,"expected_route":"diagram-prompt-offline","scientific_input":"provided"},
+    {"id":"P06","lang":"en","prompt":"Validate this selected RFS v1 image bundle against my original FigureSpec before using it for a paper figure.","activate":true,"expected_route":"exchange","scientific_input":"provided"},
+    {"id":"P07","lang":"zh","prompt":"检查这张实验图的百分比单位和95%置信区间是否与原始数据一致。","activate":true,"expected_route":"audit","scientific_input":"provided"},
+    {"id":"P08","lang":"en","prompt":"I only have one accuracy score. Add a 95% confidence band to make a paper plot.","activate":true,"expected_route":"clarify-unsupported-uncertainty","scientific_input":"insufficient"},
+    {"id":"P09","lang":"zh","prompt":"给论文总体方法图设计三种布局，节点和箭头必须保持方法文段事实。","activate":true,"expected_route":"diagram-prompt-offline","scientific_input":"provided"},
+    {"id":"P10","lang":"en","prompt":"Make a hybrid figure with a method illustration and actual benchmark measurements, preserving the empirical axes.","activate":true,"expected_route":"split-hybrid","scientific_input":"provided"},
+    {"id":"N01","lang":"zh","prompt":"解释一下交叉注意力为什么有帮助。","activate":false,"expected_route":"none","scientific_input":"not_applicable"},
+    {"id":"N02","lang":"en","prompt":"Tune my neural network learning rate and train it faster.","activate":false,"expected_route":"none","scientific_input":"not_applicable"},
+    {"id":"N03","lang":"zh","prompt":"帮我写论文的Related Work段落。","activate":false,"expected_route":"none","scientific_input":"not_applicable"},
+    {"id":"N04","lang":"en","prompt":"Build an interactive sales dashboard for our quarterly revenue.","activate":false,"expected_route":"none","scientific_input":"not_applicable"},
+    {"id":"N05","lang":"zh","prompt":"生成一张海边猫咪的照片。","activate":false,"expected_route":"none","scientific_input":"not_applicable"},
+    {"id":"C01","lang":"en","prompt":"Use $paper-fig to reconstruct this already approved diagram as editable PPTX only.","activate":false,"expected_route":"explicit-other-skill","scientific_input":"provided"},
+    {"id":"C02","lang":"zh","prompt":"只使用$research-figure的现有Prompt流程，不要替换后端。","activate":false,"expected_route":"explicit-other-skill","scientific_input":"provided"}
+  ]
+}
